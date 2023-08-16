@@ -11,7 +11,7 @@ class Subscriber(Node):
         self.subscription 
 
     def listener_callback(self, msg):
-        self.get_logger().info('A ottuda mne: "%s"' % msg.data)
+        self.get_logger().info('I accept: "%s"' % msg.data)
 
 def main(args=None):
     rclpy.init(args=args)
