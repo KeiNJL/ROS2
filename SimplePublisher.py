@@ -12,9 +12,9 @@ class Publisher(Node):
 
     def timer_callback(self):
         msg = String()
-        msg.data = 'Eho: %d' % self.i
+        msg.data = 'Hello World: %d' % self.i
         self.publisher_.publish(msg)
-        self.get_logger().info('Krichu v pescheru: "%s"' % msg.data)
+        self.get_logger().info('Publish: "%s"' % msg.data)
         self.i += 1
 
 def main(args=None):
