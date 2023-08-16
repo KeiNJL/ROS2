@@ -19,7 +19,6 @@ class Publisher(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-
     publisher = Publisher()
 
     rclpy.spin(publisher)
